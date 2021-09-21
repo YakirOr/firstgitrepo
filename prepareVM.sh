@@ -1,6 +1,6 @@
 #!bin/sh
 #Prepare VM
-#yum update -y
+nohup yum update -y &
 npm install -g npm@latest
 
 curl --silent --location https://rpm.nodesource.com/setup_10.x | sudo bash -
