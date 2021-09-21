@@ -12,6 +12,7 @@ yum install -y gcc-c++ make
 npm install -g contentful-cli
 npm audit fix --force
 
+cd /root
 git clone https://github.com/YakirOr/the-example-app.nodejs.git
 cd the-example-app.nodejs/
 npm install
