@@ -1,6 +1,6 @@
 #!bin/sh
 #Prepare VM
-#yum update -y 
+yum update -y 
 pwd
 pwd
 
