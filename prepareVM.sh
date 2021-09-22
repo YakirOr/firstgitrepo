@@ -1,27 +1,20 @@
 #!bin/sh
 #Prepare VM
-yum update -y --exclude=NetworkManage
-pwd
-pwd
-
-
-
 curl --silent --location https://rpm.nodesource.com/setup_10.x | sudo bash -
-pwd
 yum install -y nodejs
-pwd
 yum install -y gcc-c++ make
-npm install -g npm@latest
 
+npm install -g npm@latest
 
 npm install -g contentful-cli
 npm audit fix --force
+echo -----------------------------------------------NewStage
+yum install -y git
 
-
-cd /root
 git clone https://github.com/YakirOr/the-example-app.nodejs.git
 cd the-example-app.nodejs/
-npm install
-npm audit fix --force
+npm install --prefix ./the-example-app.nodejs
+npm audit fix --force --prefix ./the-example-app.nodejs
+npm audit fix --force --prefix ./the-example-app.nodejs
 
-npm run start:dev
+npm run start:dev --prefix ./the-example-app.nodejs
