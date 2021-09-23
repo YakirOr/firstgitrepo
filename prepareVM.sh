@@ -13,4 +13,4 @@ node --version
 echo---------------------------------------------------
 
 npm install -g contentful-cli
-npm audit fix --force
+
