@@ -1,6 +1,6 @@
 #!bin/sh
 #Prepare VM
-curl --silent --location https://rpm.nodesource.com/setup_10.x | sudo bash -
+curl -t --silent --location https://rpm.nodesource.com/setup_10.x | sudo bash -
 yum install -y nodejs
 yum install -y gcc-c++ make
 
