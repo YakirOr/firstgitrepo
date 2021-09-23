@@ -7,5 +7,10 @@ yum install -y gcc-c++ make
 
 npm install -g npm@latest
 
+echo---------------------------------------------------
+npm --version
+node --version
+echo---------------------------------------------------
+
 npm install -g contentful-cli
 npm audit fix --force
